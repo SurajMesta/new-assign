@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.en-li{
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.details{
+  visibility: hidden;
+  position:absolute;
+  top:55px;
+  right:-35px;
+  background-color:darkslategray;
+  
+  padding: 20px 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.en-li:hover .details{
+  visibility: visible;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.main-div{
+ 
+
+  display: flex;
+  margin: 30px 100px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.vote-div{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+  width: 40%;
+  height: 60%;
+  margin-left: 500px;
+  margin-right: 50px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.vote-div button{
+  border: none;
+  background-color: none;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-div{
+  margin-right: 30px;
+ 
+
+}
+
+.img-div img{
+  height: 150px;
+}
+
+.info-div{
+
+ 
+ padding: 2px 10px;
+ width: 500px;
+ height: 200px;
+ text-align: left;
+ flex: 1;
+}
+
+.inn-div{
+ 
+  width: 500px;
+  padding: 2px 5px;
+}
+
+.butt-div{
+ 
+
+ text-align: center;
+ margin: 2px 300px;
+ width: 500px;
+}
+
+.butt-div button{
+  width: 100%;
+  border:none;
+  background-color: royalblue;
+  color: aliceblue;
 }
